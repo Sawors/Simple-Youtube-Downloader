@@ -53,3 +53,14 @@ Usually this mode can be avoided by using a more precise search, sending for ins
 	Or enter the number of the video you want to download
 
 	Action : |
+	
+	
+### How to install
+This tool can be used right after downloading it without the need for an installation (portable).
+However if you want to use it from the command line using directly `ytdl` regardless of the directory you need to go to a few extra steps.
+For the moment you have to perform the installation by hand, an installer should be provided at one time.
+
+#### Windows :
+- On windows place the ytdl.exe in a proper directory, for instance `C:\Program Files\Simple Youtube Downloader\`.
+- After this go to your environement variables and edit `Path` to add the directory where ytdl.exe is installed. [how to edit environement variables on Windows](https://www.wikihow.com/Change-the-PATH-Environment-Variable-on-Windows)
+- Usually you will have to restart you computer for this change to take effect
