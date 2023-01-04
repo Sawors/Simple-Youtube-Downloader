@@ -31,7 +31,8 @@ Future<void> main(List<String> arguments) async {
       .replaceAll("-ogg", "")
       .replaceAll("-mp3", "")
       .replaceAll("-ls", "")
-      .replaceAll("-list", "");
+      .replaceAll("-list", "")
+      .replaceFirst(" ", "");
 
   try{
     if(listMode){
