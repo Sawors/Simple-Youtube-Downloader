@@ -15,3 +15,5 @@ build/
 /.idea/modules.xml
 /pubspec.lock
 /.idea/vcs.xml
+
+*.exe
