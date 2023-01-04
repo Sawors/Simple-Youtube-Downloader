@@ -17,3 +17,5 @@ build/
 /.idea/vcs.xml
 
 *.exe
+*.mp3
+*.ogg

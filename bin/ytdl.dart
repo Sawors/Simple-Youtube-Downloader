@@ -106,8 +106,9 @@ Future<void> showVideoSelectionPage({
     case "n":
     case "next":
     case "NEXT":
-      if((pages[pageIndex+1] == null || (pages[pageIndex+1]?.length ?? 0) > 0) && source != null){
-        int i = pageIndex+1;
+    int i = pageIndex+1;
+      if((pages[i] == null || (pages[i]?.length ?? 0) <= 0) && source != null){
+
         await source.nextPage();
         for(Video vid in source){
           var previous = pages[i];
@@ -155,10 +156,11 @@ Future<void> showVideoSelectionPage({
       int? selectionValue = int.tryParse(selection);
       if(selectionValue != null){
         // the user selected a video
-        selectionValue--;
-        if(selectionValue >= 0 && selectionValue <pageContent.length){
+        selectionValue = selectionValue-(1+(pageIndex*pageLength));
+        if(selectionValue >= 0 && selectionValue < pageContent.length){
           Video video = pageContent[selectionValue];
           await downloadVideo(video.id.value,video);
+          break;
         }
       } else {
         // the user did nothing
@@ -169,6 +171,7 @@ Future<void> showVideoSelectionPage({
             pageLength: pageLength,
             source: source
         );
+        break;
       }
   }
 }
