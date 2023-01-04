@@ -61,6 +61,6 @@ However if you want to use it from the command line using directly `ytdl` regard
 For the moment you have to perform the installation by hand, an installer should be provided at one time.
 
 #### Windows :
-- On windows place the ytdl.exe in a proper directory, for instance `C:\Program Files\Simple Youtube Downloader\`.
+- On Windows place the ytdl.exe in a proper directory, for instance `C:\Program Files\Simple Youtube Downloader\`.
 - After this go to your environement variables and edit `Path` to add the directory where ytdl.exe is installed. [how to edit environement variables on Windows](https://www.wikihow.com/Change-the-PATH-Environment-Variable-on-Windows)
 - Usually you will have to restart you computer for this change to take effect
