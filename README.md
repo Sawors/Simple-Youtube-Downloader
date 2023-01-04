@@ -58,7 +58,7 @@ Usually this mode can be avoided by using a more precise search, sending for ins
 ### How to install
 This tool can be used right after downloading it without the need for an installation (portable).
 However if you want to use it from the command line using directly `ytdl` regardless of the directory you need to go to a few extra steps.
-For the moment you have to perform the installation by hand, an installer should be provided at one time.
+For the moment you have to perform the installation by hand, an installer should be provided eventually.
 
 #### Windows :
 - On Windows place the ytdl.exe in a proper directory, for instance `C:\Program Files\Simple Youtube Downloader\`.
