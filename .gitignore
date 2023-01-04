@@ -4,3 +4,14 @@
 
 # Conventional directory for build output.
 build/
+/.idea/.gitignore
+/analysis_options.yaml
+/commandline-youtube-downloader.iml
+/compile-and-copy.bat
+/.idea/libraries/Dart_Packages.xml
+/.idea/libraries/Dart_SDK.xml
+/.idea/dbnavigator.xml
+/.idea/misc.xml
+/.idea/modules.xml
+/pubspec.lock
+/.idea/vcs.xml
