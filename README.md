@@ -1,17 +1,17 @@
 
 # YTDL
 ## Simple Command Line YouTube Downloader
-The goal of this tool is to allow you to simply download the audio from YouTube videos directly from the command line using only the video title.
+The goal of this tool is to allow you to download the audio of YouTube videos directly from the command line using just the video title.
 
-It works by performing a search using the title you provided and then proceeds to download the first result.
-It also allows you to display the videos found by the search and then lets you select your desired result to download.
+It works by performing a search using the title you provided and then proceeds to download the first result found.
+It also allows you to display the videos found by the search and then lets you select your desired result for downloading.
 ## Usage
 ### Downloading
-Use `ytdl` followed by the title of the video to directly download it.
+Use `ytdl` followed by the title of the video to directly download it, it is as simple as that.
 The audio will be downloaded where the command line is opened (cd/current directory)
 
     $ ytdl <args> [title of the video]
-For instance this will download the song *Free Bird* by *Lynyrd Skynyrd* to a mp3 file, it is as simple as that :
+For instance this will download the song *Free Bird* by *Lynyrd Skynyrd* to a mp3 file :
 
 	$ ytdl free bird
 Arguments :
