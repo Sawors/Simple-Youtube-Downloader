@@ -28,7 +28,7 @@ Usage example (command executed in `/home/username/Music`):
 
 	Successfully downloaded "Super Mario Bros. Theme Song" !
 
-	File located at /home/username/MusicSuper Mario Bros. Theme Song.mp3
+	File located at /home/username/Music/Super Mario Bros. Theme Song.mp3
 	Channel : ultragamemusic
 	Duration : 01:23
 
