@@ -117,7 +117,6 @@ Future<void> showVideoSelectionPage({
           if(source.indexOf(vid)%pageLength == pageLength-1) i++;
         }
       }
-      print(pages);
       await showVideoSelectionPage(
           pages: pages,
           pageIndex: pageIndex+1,
