@@ -1,17 +1,17 @@
 
 # YTDL
 ## Simple Command Line YouTube Downloader
-The goal of this tool is to allow you to simply download the audio from YouTube videos directly from the command line using only the video title.
+The goal of this tool is to allow you to download the audio of YouTube videos directly from the command line using just the video title.
 
-It works by performing a search using the title you provided and then proceeds to download the first result.
-It also allows you to display the videos found by the search and then lets you select your desired result to download.
+It works by performing a search using the title you provided and then proceeds to download the first result found.
+It also allows you to display the videos found by the search and then lets you select your desired result for downloading.
 ## Usage
 ### Downloading
-Use `ytdl` followed by the title of the video to directly download it.
+Use `ytdl` followed by the title of the video to directly download it, it is as simple as that.
 The audio will be downloaded where the command line is opened (cd/current directory)
 
     $ ytdl <args> [title of the video]
-For instance this will download the song *Free Bird* by *Lynyrd Skynyrd* to a mp3 file, it is as simple as that :
+For instance this will download the song *Free Bird* by *Lynyrd Skynyrd* to a mp3 file :
 
 	$ ytdl free bird
 Arguments :
@@ -28,7 +28,7 @@ Usage example (command executed in `/home/username/Music`):
 
 	Successfully downloaded "Super Mario Bros. Theme Song" !
 
-	File located at /home/username/MusicSuper Mario Bros. Theme Song.mp3
+	File located at /home/username/Music/Super Mario Bros. Theme Song.mp3
 	Channel : ultragamemusic
 	Duration : 01:23
 
@@ -56,9 +56,9 @@ Usually this mode can be avoided by using a more precise search, sending for ins
 	
 	
 ### How to install
-This tool can be used right after downloading it without the need for an installation (portable).
-However if you want to use it from the command line using directly `ytdl` regardless of the directory you need to go to a few extra steps.
-For the moment you have to perform the installation by hand, an installer should be provided eventually.
+This tool can be used right after downloading without the need for an installation (portable).
+However if you want to use it from the command line using directly `ytdl` regardless of the directory you need to go through a few extra steps.
+For the moment you have to perform the installation by hand, an installer will be provided eventually.
 
 #### Windows :
 - On Windows place the ytdl.exe in a proper directory, for instance `C:\Program Files\Simple Youtube Downloader\`.
