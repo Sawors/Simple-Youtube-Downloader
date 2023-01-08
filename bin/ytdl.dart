@@ -210,10 +210,6 @@ Future<File?> downloadVideo(String videoId,[Video? video]) async{
   // the highest bitrate should be almost every time 128Kbps
   filteredAudio.sort((e1, e2) => max(e1.bitrate.bitsPerSecond, e2.bitrate.bitsPerSecond));
 
-  for(var inside in filteredAudio){
-    print("${filteredAudio.indexOf(inside)} : ${inside.audioCodec} - ${inside.bitrate.kiloBitsPerSecond}Kbps");
-  }
-
   if(filteredAudio.isNotEmpty){
     AudioOnlyStreamInfo bestBitrate = filteredAudio.first;
 
