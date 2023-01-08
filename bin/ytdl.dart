@@ -203,12 +203,19 @@ Future<File?> downloadVideo(String videoId,[Video? video]) async{
   if(videoId.isEmpty) return null;
 
   var manifest = await client.videos.streamsClient.getManifest(videoId);
-  var audioOnly =  manifest.audioOnly;
-  audioOnly.toList().sort((e1, e2) => max(e1.bitrate.bitsPerSecond, e2.bitrate.bitsPerSecond));
-  if(audioOnly.isNotEmpty){
 
+  List<AudioOnlyStreamInfo> filteredAudio = [...manifest.audioOnly];
+  // filtering per codec, here retaining only the mp4a codec (removing Opus)
+  filteredAudio.removeWhere((element) => !element.audioCodec.contains("mp"));
+  // the highest bitrate should be almost every time 128Kbps
+  filteredAudio.sort((e1, e2) => max(e1.bitrate.bitsPerSecond, e2.bitrate.bitsPerSecond));
 
-    AudioOnlyStreamInfo bestBitrate = audioOnly.first;
+  for(var inside in filteredAudio){
+    print("${filteredAudio.indexOf(inside)} : ${inside.audioCodec} - ${inside.bitrate.kiloBitsPerSecond}Kbps");
+  }
+
+  if(filteredAudio.isNotEmpty){
+    AudioOnlyStreamInfo bestBitrate = filteredAudio.first;
 
     var stream = client.videos.streamsClient.get(bestBitrate);
     final String fileName = (video?.title ?? videoId)
